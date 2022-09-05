@@ -1,0 +1,79 @@
+/* a sintaxe inicia com um seletor {propriedade: valor;} q podem ser <tag> #id ou .class*/
+
+/* css reset */
+*{
+    margin: 0;
+    border: 0;
+    padding: 0;
+}
+
+/* importação google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&display=swap');
+
+body{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1em; /*1em be like 16px*/
+}
+
+/* layout */
+.Container{
+    margin:0 auto;
+    background-color: #dcdcdc;
+
+}
+
+/**topo do site*/
+#topo{
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+}
+
+/*bgl responsivo*/
+
+/*smartphone landscape*/
+@media (min-width: 576px){
+    body{
+        background-color: aqua;
+    }
+    /*layout*/
+    .Container{
+        max-width: 540px;
+    }
+}
+
+/*tablet/ipad portrait*/
+@media (min-width: 768px){
+    body{
+        background-color: blue;
+    }
+    /*layout*/
+    .Container{
+        max-width: 720px;
+    }
+}
+
+/*tablet/ipad landscape*/
+@media (min-width: 992px){
+    body{
+        background-color: chartreuse;
+    }
+    /*layout*/
+    .Container{
+        max-width: 960px;
+    }
+}
+
+/*pc*/
+@media (min-width: 1200px){
+    body{
+        background-color: palegreen;
+    }
+    /*layout*/
+    .Container{
+        max-width: 1140px;
+    }
+}
+
+
+/*se o tamanho da tela dispositivo tiver uma argura minima tal fazz tal coisa*/
